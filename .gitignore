@@ -1,0 +1,4 @@
+# Environments
+.idea
+.gradle
+build
