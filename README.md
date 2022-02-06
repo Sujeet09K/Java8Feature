@@ -6,3 +6,5 @@ lambda expressions are added in Java 8 and provide below functionalities.
 1) Enable to treat functionality as a method argument, or code as data.
 2) A function that can be created without belonging to any class.
 3) A lambda expression can be passed around as if it was an object and executed on demand.
+
+Ref link : http://tutorials.jenkov.com/java/lambda-expressions.html 
