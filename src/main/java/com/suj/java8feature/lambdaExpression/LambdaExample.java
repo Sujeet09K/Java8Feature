@@ -8,7 +8,7 @@ public class LambdaExample {
     interface FuncInter1 {
         int operate (int num1, int num2);
     }
-
+    @FunctionalInterface //Annotation to mark the interface as Functional Interface
     interface FuncInter2{
         void display(String displayStr);
     }
