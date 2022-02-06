@@ -15,16 +15,17 @@ public class LambdaExample {
 
     public static void main(String[] args) {
         LambdaExample instance = new LambdaExample();
-
+        //Variables declared outside lambda expression is also accessible inside lambda expression
+        String commonString = ">>>";
         //Implementation of lambda expressions
         FuncInter1 add = ((num1, num2) -> {
-            System.out.println("Num1 :"+num1+" Num2 :"+num2);
+            System.out.println(commonString + "Num1 :"+num1+" Num2 :"+num2);
             return  (num1 + num2);
         });
         FuncInter1 multiple = ((num1, num2) -> num1 * num2);
         FuncInter2 displayString = (inputStr) -> System.out.println(inputStr);
         IFuncInter iterateDisplayString = ((num1, inputStr) -> {
-            System.out.println("Displaying input string "+num1+" times");
+            System.out.println(commonString+"Displaying input string "+num1+" times");
             for (int i = 1; i <= num1; i++) {
                 System.out.println(inputStr + "-" + i);
             }
