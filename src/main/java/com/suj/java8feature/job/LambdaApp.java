@@ -58,6 +58,14 @@ public class LambdaApp {
 
         dept_sal.entrySet().stream().forEach(System.out::println);
 
+        System.out.println("============Update salary for specific dept==============");
+        empList.stream()
+                .filter(e -> "depart_1".equals(e.getDepartment()))
+                .map(e -> {e.setSalary(e.getSalary()+999); return e;})
+                .collect(Collectors.toList());
+
+        empList.stream().forEach(System.out::println);
+
     }
 
     static public void getEmployees(){
